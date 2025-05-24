@@ -1,0 +1,41 @@
+/* ==== SubmitTestimony Alignment & Sizing ==== */
+.submit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.submit-form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.submit-form .form-group label {
+    margin-bottom: 8px;
+}
+
+.submit-form .login-input,
+.submit-form textarea,
+.submit-form input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submit-form textarea {
+    resize: vertical;
+}
+
+.submit-form input[type="file"] {
+    padding: 4px 0;
+}
+
+.submit-form .help-text,
+.submit-form .small-text {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 4px;
+}

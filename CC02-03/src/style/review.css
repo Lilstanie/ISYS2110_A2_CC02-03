@@ -1,0 +1,196 @@
+/* ============================== */
+/* ===== Review & Approve ====== */
+/* ============================== */
+
+
+/* Progress bar */
+.progress-chart {
+  margin: 20px 0;
+}
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px 0;
+}
+.progress-fill {
+  height: 100%;
+  background-color: #3C8AD2;
+  transition: width 0.3s ease;
+}
+
+/* Tab buttons */
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 10px;
+}
+.tab-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.tab-button.active {
+  background-color: #3C8AD2;
+  color: white;
+}
+
+/* Sort and search */
+.sort-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.sort-controls label {
+  font-weight: 500;
+}
+.sort-controls select {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+}
+.sort-controls select:focus {
+  outline: none;
+  border-color: #3C8AD2;
+  box-shadow: 0 0 0 2px rgba(60, 138, 210, 0.2);
+}
+.sort-controls input[type="text"] {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 200px;
+}
+.sort-controls input[type="text"]:focus {
+  outline: none;
+  border-color: #3C8AD2;
+  box-shadow: 0 0 0 2px rgba(60, 138, 210, 0.2);
+}
+
+.checkbox-label {
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+}
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+
+
+/* Reviewed cards */
+.reviewed-card {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.reviewed-card:hover {
+  background-color: #eaeaea;
+}
+.card-top p {
+  margin: 0 0 5px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+.submission-title {
+  margin: 0;
+}
+
+.styled-approved-info p {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 2px 0;
+}
+
+/* Popup */
+.review-popup {
+  width: 40%;
+  max-width: 600px;
+  padding: 30px 20px 20px;
+  margin-top: 40px; 
+  position: relative;
+}
+.popup-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.popup-subheading {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.popup-description {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+  color: #444;
+}
+
+/* Close button */
+.close-btn.top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #555;
+  cursor: pointer;
+}
+.close-btn.top-left:hover {
+  color: red;
+}
+
+textarea.login-input {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Request review button */
+.button_gray {
+  background: #949494;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: white;
+  cursor: pointer;
+}
+.button_gray:hover {
+  background-color: #7a7a7a;
+}
+
+/* Popup image */
+.review-popup img.event-popup-image {
+  display: block;
+  margin: 15px auto;
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}

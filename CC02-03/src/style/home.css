@@ -1,0 +1,470 @@
+/* ============================== */
+/* === Desktop Home Page ======= */
+/* ============================== */
+
+.desktop-home-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  font-family: 'Inria Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop-home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Loading */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  color: #666;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Header */
+.desktop-home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.sign-out-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.sign-out-btn:hover {
+  background: #c0392b;
+  transform: translateY(-1px);
+}
+
+/* Notification Section */
+.notification-section {
+  margin-bottom: 40px;
+}
+
+.notification-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.notification-icon {
+  font-size: 24px;
+}
+
+.notification-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Moderator Dashboard */
+.moderator-dashboard {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.review-section h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 20px 0;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Progress Card */
+.progress-card {
+  background: #4A90E2;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.progress-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-label {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.view-log-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inria Sans', sans-serif;
+  width: fit-content;
+}
+
+.view-log-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.progress-circle {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.circle-progress {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(white 0deg 126deg, rgba(255,255,255,0.3) 126deg 360deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle-progress::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: #4A90E2;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.progress-percentage {
+  font-size: 18px;
+  font-weight: 700;
+  z-index: 1;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Status Sections */
+.status-section {
+  margin-bottom: 25px;
+}
+
+.status-section h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 15px 0;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.status-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status-item, .testimony-item, .approved-item {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.status-item.orange {
+  border-left-color: #f39c12;
+}
+
+.testimony-item {
+  border-left-color: #95a5a6;
+}
+
+.testimony-item.highlighted {
+  border-left-color: #4A90E2;
+  background: #f0f8ff;
+}
+
+.approved-item {
+  border-left-color: #27ae60;
+}
+
+.item-author {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin: 0 0 4px 0;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.item-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.review-note, .approval-note {
+  font-size: 12px;
+  color: #777;
+  font-style: italic;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Action Cards - Vertical Layout */
+.action-cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.action-card {
+  background: #4A90E2;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.action-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.action-card.blue-card {
+  background: #4A90E2;
+}
+
+.card-icon-wrapper {
+  background: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card-icon {
+  font-size: 24px;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: white;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.card-description {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.9;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Bottom Navigation - Fixed at bottom */
+.bottom-navigation {
+  background: #4A90E2;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+  position: sticky;
+  bottom: 20px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.7);
+  min-width: 60px;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item.active {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-icon {
+  font-size: 20px;
+}
+
+.nav-label {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .desktop-home-container {
+    padding: 20px;
+  }
+  
+  .header-title {
+    font-size: 24px;
+  }
+  
+  .action-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-home-container {
+    padding: 15px;
+    padding-bottom: 100px;
+  }
+  
+  .desktop-home-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .header-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .sign-out-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .progress-card {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .status-items {
+    gap: 8px;
+  }
+  
+  .status-item, .testimony-item, .approved-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    border-radius: 0;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 20px;
+  }
+  
+  .header-logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+  }
+  
+  .card-description {
+    font-size: 14px;
+  }
+  
+  .nav-label {
+    font-size: 10px;
+  }
+  
+  .nav-icon {
+    font-size: 18px;
+  }
+}

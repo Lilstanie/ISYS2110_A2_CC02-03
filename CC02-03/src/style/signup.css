@@ -1,0 +1,307 @@
+/* ============================== */
+/* === Desktop Sign Up Page ===== */
+/* ============================== */
+
+/* Desktop Sign Up Page */
+.desktop-signup-page {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.desktop-signup-container {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.desktop-signup-content {
+  text-align: center;
+  padding: 0 40px;
+}
+
+/* Logo */
+.desktop-signup-logo-container {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.desktop-signup-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+/* Welcome Section */
+.desktop-signup-welcome-section {
+  margin-bottom: 30px;
+}
+
+.desktop-signup-welcome-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Bible Quote Section */
+.desktop-signup-quote-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #4A90E2;
+}
+
+.desktop-signup-quote-text {
+  font-size: 18px;
+  color: #555;
+  font-style: italic;
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.desktop-signup-quote-reference {
+  font-size: 16px;
+  color: #777;
+  font-weight: 600;
+  margin: 0;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Form Styles */
+.desktop-signup-form {
+  margin-bottom: 25px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.desktop-signup-form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.desktop-signup-form-label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4A90E2;
+  margin-bottom: 8px;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.desktop-signup-form-input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid #e1e5e9;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  background: #f8f9fa;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.desktop-signup-form-input:focus {
+  outline: none;
+  border-color: #4A90E2;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.desktop-signup-form-input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+/* Active field styling (like in your Figma) */
+.desktop-signup-form-input.active-field {
+  border-color: #4A90E2;
+  background: white;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.1);
+}
+
+/* Error Message */
+.desktop-signup-error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 12px 0;
+  text-align: center;
+  padding: 10px;
+  background: #fdf2f2;
+  border-radius: 6px;
+  border: 1px solid #fecaca;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Success Message */
+.desktop-signup-success-message {
+  color: #27ae60;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 12px 0;
+  text-align: center;
+  padding: 10px;
+  background: #f0f9f4;
+  border-radius: 6px;
+  border: 1px solid #86efac;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Sign Up Button */
+.desktop-signup-btn {
+  width: 100%;
+  background: #4A90E2;
+  color: white;
+  border: none;
+  padding: 18px 24px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  font-family: 'Inria Sans', sans-serif;
+  max-width: 500px;
+}
+
+.desktop-signup-btn:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3);
+}
+
+/* Login Link Section */
+.desktop-signup-login-section {
+  margin-bottom: 25px;
+}
+
+.desktop-signup-login-text {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.desktop-signup-login-link {
+  color: #4A90E2;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.desktop-signup-login-link:hover {
+  color: #357abd;
+}
+
+/* Apple Sign In Button */
+.desktop-signup-apple-signin-btn {
+  width: 100%;
+  max-width: 500px;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  opacity: 0.6;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .desktop-signup-page {
+    padding: 30px 20px;
+  }
+  
+  .desktop-signup-content {
+    padding: 0 20px;
+  }
+  
+  .desktop-signup-welcome-title {
+    font-size: 36px;
+  }
+  
+  .desktop-signup-logo {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .desktop-signup-quote-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-signup-welcome-title {
+    font-size: 30px;
+  }
+  
+  .desktop-signup-form-label {
+    font-size: 16px;
+  }
+  
+  .desktop-signup-form-input {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+  
+  .desktop-signup-btn {
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+  
+  .desktop-signup-quote-text {
+    font-size: 15px;
+  }
+  
+  .desktop-signup-quote-reference {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .desktop-signup-page {
+    padding: 20px 15px;
+  }
+  
+  .desktop-signup-content {
+    padding: 0 10px;
+  }
+  
+  .desktop-signup-welcome-title {
+    font-size: 26px;
+  }
+  
+  .desktop-signup-logo {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .desktop-signup-container {
+    max-width: 100%;
+  }
+}
