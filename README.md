@@ -17,8 +17,22 @@ How to run file/Setup:
 
 ## Home 
 
+The home page displays different content based on user roles. Users can access quick action cards to navigate to events, testimonies, calendar, and account.  For different roles of users,(eg: Sermon Planner) We had it's own add event section. Moderators see a special dashboard for reviewing testimonies.
+
+![alt text](readme_images/home-user.png)
+*User home page with action cards*
+
+![alt text](readme_images/home-planner.png)
+*Sermon Planner with additioanl feature*
+
+![alt text](readme_images/home-moderator.png)
+*Moderator home page with review dashboard*
 
 ## Login 
+
+The login page features username/password authentication with password visibility toggle. Users can sign in with their credentials or use test buttons for quick access during development.
+
+
 Login credentials: 
 | Username             | Password      |
 | -------------------- | ------------- |
@@ -28,10 +42,23 @@ Login credentials:
 | EmergencyCoordinator | pass          |
 
 
-## Sign Up 
+![alt text](readme_images/login-page.png)
+*Login page with authentication form and test buttons*
 
+![alt text](readme_images/lock.png)
+![alt text](readme_images/unlock.png)
+*Implementation of hidden/visible password for better user security*
+
+
+## Sign Up 
+The registration page allows new users to create accounts with form validation. Users enter username, email, password, and password confirmation. Includes biblical quote and password visibility toggles.
+
+![alt text](readme_images/signup-pages.png)
+*Sign up page with registration form and validation*
 
 ## Alert
+Alert page is a page where emergency prayer meeting is scheduled or updates for the website will be shown
+![alt text](readme_images/alert-1.png)
 
 ## Events 
 The events page is accessible for all users 
@@ -58,6 +85,17 @@ The "Add Events" button is only accessible for the sermon planner.
 
 
 ## Testimonies
+Testimonies pages are accessible to all users.
+![alt text](readme_images/testimony-1.png)
+
+Where users can see everyone testimonies on this page.
+![alt text](readme_images/testimony-2.png)
+
+If you want to see your own testimonies, click "View your posts", where you have the option to delete your testimonies. Which gives you a popup to delete.
+![alt text](readme_images/testimony-3.png)
+
+If you like add your testimony, click on "Add Testimony", (Option to add few supported files) You have to compulsory add your title and description to post (should be approved by the moderator)
+![alt text](readme_images/testimony-4.png)
 
 
 ## Account
