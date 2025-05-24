@@ -1,0 +1,61 @@
+/* ============================== */
+/* ======== Sidebar/Nav ======== */
+/* ============================== */
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #3C8AD2;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 1px solid white;
+  margin: 10px 0;
+}
+
+
+.nav-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 15px 0;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: left;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.logout-button:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
